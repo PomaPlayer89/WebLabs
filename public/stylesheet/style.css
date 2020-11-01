@@ -1,0 +1,184 @@
+.bd {
+    background-color: #9370DB;
+
+    background-image:
+       -webkit-gradient(radial, 50% 50%, 2, 50% 50%, 40, from(white), color-stop(0.1, rgba(248,255,128,.5)), to(transparent)),
+       -webkit-gradient(radial, 50% 50%, 1, 50% 50%, 30, from(white), color-stop(0.1, rgba(255,186,170,.4)), to(transparent)),
+       -webkit-gradient(radial, 50% 50%, 1, 50% 50%, 40, from(rgba(255,255,255,.9)), color-stop(0.05, rgba(251,255,186,.3)), to(transparent)),
+       -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 30, from(rgba(255,255,255,.4)), color-stop(0.03, rgba(253,255,219,.2)), to(transparent));
+
+    background-image:
+       -moz-radial-gradient(circle, #FFFFFF 2px, rgba(248,255,128,.5) 4px, transparent 40px),
+       -moz-radial-gradient(circle, #FFFFFF 1px, rgba(255,186,170,.4) 3px, transparent 30px),
+       -moz-radial-gradient(circle, rgba(255,255,255,.9) 1px, rgba(251,255,186,.3) 2px, transparent 40px),
+       -moz-radial-gradient(circle, rgba(255,255,255,.4), rgba(253,255,219,.2) 1px, transparent 30px);
+
+    background-size: 550px 550px, 350px 350px, 250px 270px, 220px 200px;
+
+    background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+    animation-name: movement;
+   animation-duration: 5s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+
+   -moz-animation-name: movement;
+   -moz-animation-duration: 5s;
+   -moz-animation-timing-function: linear;
+   -moz-animation-iteration-count: infinite;
+
+   -webkit-animation-name: movement;
+   -webkit-animation-duration: 5s;
+   -webkit-animation-timing-function: linear;
+   -webkit-animation-iteration-count: infinite;
+}
+@keyframes movement
+{
+   from {
+         background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+   }
+   to {
+         background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;
+   }
+}
+@-moz-keyframes movement
+{
+   from {
+         background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+   }
+   to {
+         background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;
+   }
+}
+@-webkit-keyframes movement
+{
+   from {
+         background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+   }
+   to {
+         background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;
+   }
+}
+
+.b{
+    background-color: #9370DB;
+   }
+   .pic1{
+     position: fixed;
+     left:187px;
+     top:119px;
+     border: 3px solid black;
+     border-radius: 10px;
+     box-shadow: 0 0 30px #000;
+   }
+   .pic2{
+     position: fixed;
+     left:187px;
+     top:509px;
+     border: 3px solid black;
+     border-radius: 10px;
+     box-shadow: 0 0 30px #000;
+   }
+   .pic1 img {
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    }
+    
+   .pic1 img:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    }
+    .pic2 img {
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    }
+    
+   .pic2 img:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    }
+   .p{
+   background-color: #D8BFD8;
+   border-radius: 10px;
+   box-shadow: 0 0 74px -2px #000;
+   text-indent: 12px;
+   padding: 0px 18px 701px 17px;
+   margin: 6px auto;
+   width: 780px;
+   position: fixed;
+   left:901px;
+   top:119px;
+   }
+   .zag{
+     font-family: "Monotype Corsiva", serif;
+     text-align: center;
+     font-size: 45px;
+   }
+   .info{
+      font-size: 18px;
+      font-family: "Times New Roman", serif;
+   }
+   .tex{
+     font-family: "Monotype Corsiva", serif;
+     font-size: 21px;
+   }
+   .fon1{
+     background-color: #FFB6C1;
+   }
+    .tab {
+        overflow: hidden;
+        border: 1px solid #000;
+        background-color: #D8BFD8;
+        border-radius: 10px;
+        box-shadow: 0 0 27px -2px #000;
+        text-indent: 12px;
+        padding: 0px 18px 0px 17px;
+        margin: 6px auto;
+        width: 780px;
+        position: fixed;
+        left:901px;
+        top:119px;
+    }
+    
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+    }
+    
+    .tab button:hover {
+        background-color: #87CEFA;
+    }
+    
+    .tab button.active {
+        background-color: #7B68EE;
+        color: #fff;
+        font-family: "Times New Roman", serif;
+        font-size: 17px;
+    }
+    
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 3px solid #000;
+        border-top: none;
+        border-radius: 10px;
+        text-indent: 12px;
+        padding: 0px 18px 0px 17px;
+        margin: 6px auto;
+        width: 780px;
+        position: fixed;
+        left:901px;
+        top:176px;
+        background-color: #D8BFD8;
+    }
+    .task{
+        font-family: "Times New Roman", serif;
+    }

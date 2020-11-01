@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/stylesheet/style.css">
+   <script type="text/javascript"  src="/js/main.js"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<title>ЛабаПоВебу</title>
+</head>
+<body class="bd">
+   <div class="pic1"><a href="#"><img  src="/img/Dars.jpg"  width="600"></a></div>
+   <div class="pic2"><a href="#"><img  src="/img/Darsi.png" width="600"></a></div>
+   <div class="p">\</div>
+   <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Главная информация')">Главная информация</button>
+    <button class="tablinks" onclick="openCity(event, 'Задания')">Задания на JS</button>
+  </div>
+  
+  <div id="Главная информация" class="tabcontent">
+    <p class="zag">Дарси</p>
+    <p class="tex"><br>
+      <b class="info">Дата Рождения:</b>7 января<br>
+      <b class="info">Знак зодиака:</b> Козерог<br>
+      <b class="info">Любимое блюдо:</b> Клубничное пюре<br>
+      <b class="info">Магическая стихия:</b> Тьма и гипноз</p></p>
+    <p class="tex">
+      Самая хладнокровная ведьма в команде Трикс, всегда бьет в полную силу и имеет минимум один запасной план на случай отступления. Ей подчиняется тьма и скрытые в ночи силы.</p>
+    <p class="tex">
+      С Дарси трудно не согласиться, не только из-за ее мощи, но и из-за магии гипноза, которой она овладела в полной мере. Даже самые стойкие и сильные феи не могут устоять перед ее внушением и начинают слушать любые приказы.
+    </p>
+    <p class="tex">
+      Она не любит добро, в принципе. Ей чуждо желание кому-нибудь помочь, выручить из беды или просто сказать <b>«спасибо»</b>.
+    </p>
+    <p class="tex">
+      Oтличается большей опрятностью, прямой осанкой и поразительным интеллектом. Чтобы досконально изучить искусство гипноза требуется по меньшей мере десять лет, но наша героиня справилась за год.
+     </p>
+    </div>
+  </div>
+  
+  <div id="Задания" class="tabcontent">
+    <p class="zag">Задания на JS</p>
+    <b class="task">Задание 1.1.</b> 
+    <br>
+    <br>
+    <div>
+        <button type="button" class="btn btn-info" onclick="result1(++firstc)">Нажми</button> 
+        <button type="button" class="btn btn-danger" onclick="result1(firstc = 0)">Сброс</button> 
+    </div><br>
+        <div class="alert alert-info" id="task1"></div>
+
+    <br>
+    <b class="task">Задание 1.2.</b>
+    <br>
+    <br>
+  <input type="text" id="task21">
+  <input type="text" id="task22">
+  <button type="button" class="btn btn-info" onclick="result2()">Сложить</button>
+  <div class="alert alert-info" role="alert">
+    <div id="task2"></div>
+  </div>
+  <br>
+  <b class="task">Задание 1.3.</b>
+  <br>
+  <br>
+  <input type="text" id="task31">
+  <input type="text" id="task32">
+  <input type="text" id="task33">
+  <input type="text" id="task34">
+  <input type="text" id="task35">
+  <button type="button" class="btn btn-info" onclick="result3()">Результат</button>
+  <div class="alert alert-info" id="task3"></div>
+</div>
+  
+ 
+
+</body>
+</html>
